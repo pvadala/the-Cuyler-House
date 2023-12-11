@@ -2,40 +2,70 @@ body {
     background-color: #20572b;
 }
 
+/*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls. */
 .banner {
     position: fixed;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 40px;
+    padding-top: 2px;
+    padding-right: 40px;
+    padding-bottom: 2px;
     box-shadow: 0px 0px 10px black;
     background-color: #F8F8C8;
 
 }
 
-/*This is the div where our content will go*/
+.navButton {
+    background-color: #F8F8C8;
+    font-size: 24px;
+    height: 100%;
+    align-self:center;
+    width: 1fr;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    text-shadow: none;
+
+    transition: color 0.2s, font-size 0.2s, text-shadow 0.2s;
+
+}
+
+/*Changes navButton properties when the user hovers over navigation buttons.*/
+.navButton:hover {
+font-size: 26px;
+text-shadow: 0px 0px 10px #20572b, 0px 0px 5px #20572b;
+color: #FFFFFF;
+}
+
+/*This is the div where the page's content will be placed.*/
 .container {
     position: relative;
     border: 0px solid;
     border-radius: 10px 10px;
     justify-self: center;
     z-index: 1;
-    margin-top: 100px;
+    margin-top: 110px; /*This is a large value to prevent the banner from overlapping when the user is at the top of the page.*/
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
-    padding: 10px;
+    padding: 1px 20px 1px 20px;
     box-shadow: 0px 0px 10px black;
-background-color: #C7D5CA;
+    background-color: #C7D5CA;
+    max-height: fit-content;
 }
 
-
+/*This makes the pages' style properties start snugly in the top left corner.*/
 .main {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
+
+/*Add media queries for smaller screen widths here*/
