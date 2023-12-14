@@ -1,0 +1,209 @@
+body {
+    background-color: #20572b;
+}
+
+/*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls. */
+.banner {
+    position: fixed;
+    display: inline-grid;
+    grid-template-columns: 249px 1fr;
+    grid-template-rows: 1;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 2px;
+    padding-right: 40px;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 10px black;
+    background-color: #F8F8C8;
+}
+
+/*Sets h1 position in the banner grid.*/
+h1 > .banner {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/*Hides the dropdown menu button when the screen is wide enough to fit the standalone buttons.*/
+#navMenu {
+    display: none;
+}
+
+/*Sets the grid position of the navButtonCont div, establishes an inline-grid for the buttons themselves, and forces a margin on the right side of the div.*/
+.navButtonCont {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-right: 40px;
+}
+
+
+.navButton {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8C8;
+    font-size: 24px;
+    width: 1fr;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    text-shadow: none;
+    white-space: nowrap;
+    text-overflow: ellipse;
+    overflow: hidden;
+    transition: color 0.2s, font-size 0.2s, text-shadow 0.2s;
+}
+
+/*Changes navButton properties when the user hovers over navigation buttons.*/
+.navButton:hover {
+    font-size: 26px;
+    text-shadow: 0px 0px 10px #20572b, 0px 0px 5px #20572b;
+    color: #FFFFFF;
+}
+
+/*This is the div where the page's content will be placed.*/
+.container {
+    position: relative;
+    border: 0px solid;
+    border-radius: 10px 10px;
+    justify-self: center;
+    z-index: 1;
+    margin-top: 110px;
+    /*This is a large value to prevent the banner from overlapping when the user is at the top of the page.*/
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 1000px;
+    padding: 1px 20px 1px 20px;
+    box-shadow: 0px 0px 10px black;
+    background-color: #C7D5CA;
+    max-height: fit-content;
+}
+
+/*This makes the pages' style properties start snugly in the top left corner.*/
+.main {
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*----------Media query for smaller devices WIP----------*/
+
+
+@media screen and (max-width: 900px) {
+   
+    .banner {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 249px, 1fr;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 2px;
+        padding-right: 40px;
+        padding-bottom: 2px;
+        box-shadow: 0px 0px 10px black;
+        background-color: #F8F8C8;
+    }
+    
+    /*Container holding buttons for wide displays should be hidden.*/
+    .navButtonCont {
+        display: none;
+    }
+    
+    /*Container holding dropdown menu button should be visible.*/
+    #navMenu {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        position: relative;
+        display: inline-block;
+        justify-self: end;
+        align-self: center;
+        height: 50px;
+        width: 50px;
+        margin-right: 30px;
+    }
+
+    /*Contains the dropButton to a reasonable size.*/
+    #navMenuToggle {
+        max-height: 50px;
+        max-width: 50px;
+    }
+    
+    /*Sets the dropdown button's default properties.*/
+    #dropButton {
+        align-self: center;
+        justify-self: center;
+        border: none;
+        border-radius: 4px;
+        background-color: #F8F8C8;
+    }
+
+    /*Sets the dropdown button's properties when hovered over or focused*/
+    #dropButton:hover, #dropButton:focus {
+        background-color: #C7D5CA;
+    }
+
+    /*Holds the dropdown menu content. This is hidden by default.*/
+    #navMenuCont {
+        display: none;
+        position: absolute;
+        background-color: #20572b;
+        min-width: 200px;
+        box-shadow: 0px 0px 10px black;
+        z-index: 3;
+    }
+
+    /*Sets how <a> tags appear in the dropdown menu.*/
+    #navMenuCont > a {
+        color:#F8F8C8;
+        padding: 10px 10px;
+        display: block;
+    }
+
+    /*Changes appearance of <a> tags when hovered over by user.*/
+    #navMenuCont > a:hover {
+        color: #20572b;
+        background-color: #C7D5CA;
+    }
+
+    /*Changes the display property of the #navMenuCont container. Change caused by the user with a click event that runs the dropMenu() function.*/
+    #show {display: block;}
+
+    /*This is the div where the page's content will be placed.*/
+    .container {
+        position: relative;
+        border: 0px solid;
+        border-radius: 10px 10px;
+        justify-self: center;
+        z-index: 1;
+        margin-top: 110px; /*This is a large value to prevent the banner from overlapping when the user is at the top of the page.*/
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 1000px;
+        padding: 1px 20px 1px 20px;
+        box-shadow: 0px 0px 10px black;
+        background-color: #C7D5CA;
+        max-height: fit-content;
+    }
+    
+    /*This makes the pages' style properties start snugly in the top left corner.*/
+    .main {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}

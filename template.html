@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cuyler House - TEMPLATE</title>
+    <link rel="stylesheet" href="templateStyle.css">
+    <script src="script.js"></script> <!--Link to the javascript file that holds our JS functions.-->
+</head>
+
+<body>
+
+    
+    <!--This is a safeguard against unintended consequences that can arise from applying CSS properties to the body itself.-->
+    <div class="main">
+
+        <!--Banner div that contains all of our site navigation links and keeps them fixed to the top of the navigation window.-->
+        <div class="banner">
+            <!--Header is a placeholder; modify it as needed to reflect page contents-->
+            <h1>The Cuyler House</h1>
+
+            <!--Should be hidden when screen width is narrow enough to interfere with navigation-->
+            <div class="navButtonCont">
+                <button class="navButton" id="homeBtn" onclick="location.href='/index.html'">Home</button>
+                <button class="navButton" id="histBtn" onclick="location.href='/history.html'">History</button>
+                <button class="navButton" id="mapBtn" onclick="location.href='/maps.html'">Maps & Charts</button>
+                <button class="navButton" id="featBtn" onclick="location.href='/hidden-features.html'">Hidden Features</button>
+                <button class="navButton" id="storeBtn" onclick="location.href='/shop.html'">Shop</button>
+            </div>
+
+            <!--Should be hidden when screen width is not too narrowed.-->
+            <div id="navMenu">
+                <button id="dropButton" onclick="dropMenu()"><img id="navMenuToggle" src="/images/default-menu-burger.svg" alt="Dropdown Navigation Menu Toggle"></button>
+                <div id="navMenuCont">
+                    <a href="/index.html">Home</a>
+                    <a href="/history.html">History</a>
+                    <a href="/maps.html">Maps & Charts</a>
+                    <a href="/hidden-features.html">Hidden Features</a>
+                    <a href="/shop.html">Shop</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Page-specific content goes in this div-->
+        <div class="container">
+            <p>TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE
+                TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE </p>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
