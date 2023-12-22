@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -6,7 +7,8 @@
     <title>The Cuyler House - Hidden Features</title>
     <link rel="stylesheet" href="hf-style.css">
     <!--Change the .css file your .html file links to in case you need specific style changes for your page.-->
-    <script src="script.js"></script> <!--Link to the javascript file that holds our JS functions.-->
+    <script src="script.js"></script> <!--Link to the javascript file that holds our site-wide JS functions.-->
+    <script src="hf-script.js"></script><!--Link to the Hidden-Features specific scripts.-->
 </head>
 
 <body>
@@ -14,8 +16,10 @@
     <div class="main">
 
         <!--Banner div that contains all of our site navigation links and keeps them fixed to the top of the navigation window.-->
+
         <div class="banner">
             <!--Header is a placeholder; modify it as needed to reflect page contents-->
+
             <h1>The Cuyler House</h1>
 
             <!--Should be hidden when screen width is narrow enough to interfere with navigation-->
@@ -53,16 +57,75 @@
 
         </div>
 
+        <!--WIP: -->
 
         <!-- Page-specific content goes in this div-->
         <div class="container">
-
-            div
             <h1>Hidden Features</h1>
             <p>This is a WIP. Content and formatting subject to change.</p>
-            <img src="/images/hiddenStairs.jpg" alt="Image depicting stairs painted dark brown with white walls in a head-on perspective.">
-            <img src="/images/hiddenStairsOpen.jpg" alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects.">
-            <img src="/images/houseDiagram.jpg" alt="Image depicting a house blueprint. A Hidden division is marked with pink text.">
+
+            
+
+            <div class="contFeatures">
+                <div class="imgCont" id="stairsClosedDiv">
+                    <img class="hidImg" src="/images/hiddenStairs.jpg"
+                        alt="Image depicting stairs painted dark brown with white walls in a head-on perspective." onclick="overlayActivate(1)">
+                    <p>This staircase has an unassuming appearance, but . In order to hide their subversive and often
+                        illegal activities, abolitionist activists had to resort to creative means of subturfuge, often
+                        hiding documents, resources, or people behind unassuming features.</p>
+                </div>
+
+                <div class="imgCont" id="stairsOpenDiv">
+                    <img class="hidImg" src="/images/hiddenStairsOpen.jpg"
+                        alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects." onclick="overlayActivate(2)">
+                    <p>This step isn't secured by anything but a hidden hinge, granting a point of access to the empty
+                        space underneath the staircase.</p>
+                </div>
+
+                <div class="imgCont" id="hiddenPartDiv">
+                    <img class="hidImg" src="/images/houseDiagram.jpg"
+                        alt="Image depicting a house blueprint. A Hidden division is marked with pink text." onclick="overlayActivate(3)">
+                    <p>The filled in space on this deed reference shows where a section of the floor plan was designed
+                        to appear inaccessible or unusable, providing a hiding place for freedom seekers from slave
+                        patrols.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="imgContOverlayHidden" id="stairsClosedDiv">
+            <button class="closeIcon" id="closeOne" onclick="closeOverlay(1)"></button>
+            <div class="overlayHold">
+                <div class="contHold">
+            <img class="showImg" src="/images/hiddenStairs.jpg"
+                alt="Image depicting stairs painted dark brown with white walls in a head-on perspective.">
+            <p>This staircase has an unassuming appearance. In order to hide their activities from slavers and oppositional state authorities, abolitionist activists had to resort to creative means of subturfuge, often hiding documents,
+                resources, or people behind unassuming features.</p>
+            </div>
+            </div>
+        </div>
+    
+        <div class="imgContOverlayHidden" id="stairsOpenDiv">
+            <img class="closeIcon" id="closeTwo" src="/images/litYelClose.svg" onclick="closeOverlay(2)">
+            <div class="overlayHold">
+            <img class="showImg" src="/images/hiddenStairsOpen.jpg"
+                alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects.">
+            <p>This step isn't secured by anything but a hidden hinge, granting a point of access to the empty space
+                underneath the staircase.</p>
+            </div>
+        </div>
+    
+        <div class="imgContOverlayHidden" id="hiddenPartDiv">
+            <img class="closeIcon" id="closeThree" src="/images/litYelClose.svg" onclick="closeOverlay(3)">
+            <div class="overlayHold">
+            <img class="showImg" src="/images/houseDiagram.jpg"
+                alt="Image depicting a house blueprint. A Hidden division is marked with pink text.">
+            <p>The filled in space on this deed reference shows where a section of the floor plan was designed to appear
+                inaccessible or unusable, providing a hiding place for freedom seekers from slave patrols.</p>
+            </div>
         </div>
 
 
@@ -70,6 +133,19 @@
 
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
