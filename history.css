@@ -2,7 +2,68 @@ body {
     background-color: rgb(226, 226, 189);
 }
 
-/*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls. */
+.image-container {
+    display: block;
+    background-color: antiquewhite;
+    padding: 15px;
+    grid-template-columns: auto auto auto;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+
+
+
+.image-container {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+h3 {
+    font-size: 15px;
+}
+
+
+
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+
+.read-more:hover {
+    background-color: rgb(63, 113, 85);
+    border-color: black;
+    color:white;
+    cursor: pointer;
+}
+   
+
+
+
+
 .banner {
     position: fixed;
     display: grid;
@@ -18,31 +79,33 @@ body {
     box-shadow: 0px 0px 10px black;
     background-color: #F8F8C8;
 
+
 }
+
 
 .navButton {
     background-color: #F8F8C8;
     font-size: 24px;
     height: 100%;
-    align-self:center;
+    align-self: center;
     width: 1fr;
     padding: 5px;
     margin: 5px;
     border: none;
     text-shadow: none;
-
     transition: color 0.2s, font-size 0.2s, text-shadow 0.2s;
 
+
 }
 
-/*Changes navButton properties when the user hovers over navigation buttons.*/
+
 .navButton:hover {
-font-size: 26px;
-text-shadow: 0px 0px 10px #20572b, 0px 0px 5px #20572b;
-color: #FFFFFF;
+    font-size: 26px;
+    text-shadow: 0px 0px 10px #20572b, 0px 0px 5px #20572b;
+    color: #FFFFFF;
 }
 
-/*This is the div where the page's content will be placed.*/
+
 .image-container {
     position: relative;
     border: 0px solid;
@@ -50,10 +113,8 @@ color: #FFFFFF;
     justify-self: center;
     z-index: 1;
     margin-top: 110px;
-    
-
-     /*This is a large value to prevent the banner from overlapping when the user is at the top of the page.*/
-    /*margin-bottom: 40px;
+    /*This is a large value to prevent the banner from overlapping when the user is at the top of the page.*/
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
@@ -61,17 +122,21 @@ color: #FFFFFF;
     box-shadow: 0px 0px 10px black;
     background-color: #C7D5CA;
     max-height: fit-content;
-*/
 
-/*This makes the pages' style properties start snugly in the top left corner.*/
-.main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
-/*Add media queries for smaller screen widths here*/
+} 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
