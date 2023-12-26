@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cuyler House - TEMPLATE</title>
+    <link rel="stylesheet" href="templateStyle.css">
+    <!--Change the .css file your .html file links to in case you need specific style changes for your page.-->
+    <script src="script.js"></script> <!--Link to the javascript file that holds our JS functions.-->
+</head>
+
+<body>
+    <!--This is a safeguard against unintended consequences that can arise from applying CSS properties to the body itself.-->
+    <div class="main">
+
+        <!--Banner div that contains all of our site navigation links and keeps them fixed to the top of the navigation window.-->
+        <div class="banner">
+            <!--Header is a placeholder; modify it as needed to reflect page contents-->
+            <h1>The Cuyler House</h1>
+
+            <!--Should be hidden when screen width is narrow enough to interfere with navigation-->
+            <div class="navButtonCont">
+                <button class="navButton" id="homeBtn" onclick="location.href='/index.html'">Home</button>
+                <button class="navButton" id="histBtn" onclick="location.href='/history.html'">History</button>
+                <button class="navButton" id="mapBtn" onclick="location.href='/maps.html'">Maps & Charts</button>
+                <button class="navButton" id="featBtn" onclick="location.href='/hidden-features.html'">Hidden
+                    Features</button>
+                <button class="navButton" id="storeBtn" onclick="location.href='/shop.html'">Shop</button>
+            </div>
+
+            <!--Should be hidden when screen width isn't too narrow.-->
+            <div id="navMenu">
+                <!--dropButton activates a JavaScript function that toggles the menu's visibility on/off and changes the icon used in the button between two files.-->
+                <button id="dropButton" onclick="dropMenu()"><img id="navMenuToggle"
+                        src="/images/default-menu-burger.svg" alt="Dropdown Navigation Menu Toggle"></button>
+
+                <!--This div's class toggles between closedMenuCont and openMenuCont each time dropButton is clicked, revealing or hiding its contents.-->
+                <div id="navMenuCont" class="closedMenuCont">
+
+                    <!--Buttons that act as clickable links to other pages on the site.-->
+                    <button class="menuButton" id="homeMenuBtn" onclick="location.href='/index.html'">Home</button>
+                    <button class="menuButton" id="histMenuBtn" onclick="location.href='/history.html'">History</button>
+                    <button class="menuButton" id="mapMenuBtn" onclick="location.href='/maps.html'">Maps &
+                        Charts</button>
+                    <button class="menuButton" id="featMenuBtn" onclick="location.href='/hidden-features.html'">Hidden
+                        Features</button>
+                    <button class="menuButton" id="storeMenuBtn" onclick="location.href='/shop.html'">Shop</button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Page-specific content goes in this div-->
+        <div class="container">
+            <p> <h1>>Southern Routes to The North</h1
+            <p>
+
+                The Underground Railroad developed as a need for African American slaves to escape the horrors of slavery in the South and head North to Canada or to Northern States in America that were considered Free States.  Much of the history of the Southern routes to the North are oral but changes to written the closer it gets to Maryland, New York , Ohio, and Pennsylvania. What is generally known of the southern routes is they were near bodies of water: rivers, lakes, creeks and marshes because dogs could not pick up a trail in water. Learning how to follow the North Star and The Big Dipper to Ohio and Canada through the use of various codes including Quilts, Songs and markings on trees and Safe Houses along the way. The Alabama River, The Tombigbee Waterways, Black Warrior River, and the Cahawba River down to Mobile and back up to Huntsville in North Alabama are the most likely routes in Alabama. From North Alabama into Tennessee and Kentucky into Ohio where there were networks of people leading into Canada and New York. Below are several links to videos, examples of codes and quilts and songs used as code for the Underground Railroad. One video shows the discovery of a safe House in Selma, Alabama </p>
+<h1>Short videos</h1>
+<p>VIDEOO LINKS
+    <a href="https://youtu.be/ghk5b9PhsX8?list=PLVIOZvINjuqIT5d-uURu1oxXvRrEF3TA9">SELMA SAFE HOUSE</a>
+
+    <a href="https://youtu.be/T1BOLWuNZHY?list=PLVIOZvINjuqIT5duURu1oxXvRrEF3TA9">HUNTSVILLES LOWRY HOUSE  A Safe House</a>
+
+    <a href="https://youtu.be/coauCXBRUSs?list=PLVIOZvINjuqIT5d-uURu1oxXvRrEF3TA9">The first Underground Railroad</a>
+
+    <a href=" https://youtu.be/IizsbKwZPBc?list=PLVIOZvINjuqIT5d-uURu1oxXvRrEF3TA9">Harriet Tubman and the Underground Railroad</a>
+
+    <a href="https://youtu.be/mwVMFyUD3tE?list=PLVIOZvINjuqIT5d-uURu1oxXvRrEF3TA9">A brief history of The Underground Railroad</a>
+
+    <h1>SONGS OF THE UNDERGROUND RAILROAD</h1>
+<a href="https://en.wikipedia.org/wiki/Songs_of_the_Underground_Railroad">SONGS</a>
+
+<h1>QUILTS</h1>
+<img src="/images/quilts/quilt1a.jpg"quilt example 1>
+<img src="/images/quilts/quilt1b.jpg"quilt example 2>
+<img src="/images/quilts/quilt1c.jpg" quilt example3>
+<img src="/images/quilts/quilt1d.jpg"quilt example4>
+<img src="/images/quilts/quilt1e.jpg"quilt example5>
+
+
+
+</p>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
