@@ -126,7 +126,10 @@ h3 {
 
 } 
 
-
+@media screen and (max-width: 600px) 
+    .image-container {
+      width: 100%;
+    }
 
 
 
