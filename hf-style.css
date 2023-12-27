@@ -2,6 +2,7 @@
 body {
     background-color: #20572b;
     width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls. Its contents default to display a dropdown button for screens of a small width; this to improve load speed on mobile devices.*/
@@ -61,10 +62,10 @@ body {
     transition: background-color 0.2s;
 }
 
-
 /*Hides navigation menu by default.*/
-.closedMenuCont {display: none;}
-
+.closedMenuCont {
+    display: none;
+}
 
 /*Shows navigation menu when dropButton input is clicked, and sets the appearance of the dropdown list*/
 .openedMenuCont {
@@ -73,120 +74,172 @@ body {
     right: 240px;
     background-color: #20572b;
     min-width: 300px;
-    box-shadow: 0px 0px 10px black;}
+    box-shadow: 0px 0px 10px black;
+}
 
 /*Sets appearance of link buttons in the dropdown menu.*/
- .menuButton {
+.menuButton {
     font-size: 30px;
-    color:#F8F8C8;
+    color: #F8F8C8;
     padding: 10px;
     display: block;
-    background-color:#20572b;
+    background-color: #20572b;
     border: none;
     transition: background-color 0.2s, color 0.2s, font-size 0.2s, text-shadow 0.2s;
 }
 
 /*Changes the appearance of the dropdown menu link for hidden-features.html to indicate that it's the current viewed page.*/
 #featMenuBtn {
-    color:#C7D5CA;
+    color: #C7D5CA;
 }
 
 /*Changes appearance of <a> tags when hovered over by user.*/
-.openedMenuCont > .menuButton:hover {
+.openedMenuCont>.menuButton:hover {
     color: #20572b;
     background-color: #C7D5CA;
     font-size: 34px;
 }
 
-
 /*This is the div where the page's content will be placed.*/
 .container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     border: 0px solid;
     border-radius: 10px 10px;
-    justify-self: center;
     z-index: 1;
-    margin-top: 110px; /*This is a large value to prevent the banner from overlapping when the user is at the top of the page.*/
+    margin-top: 110px;
+    /*This is a large value to prevent the banner from overlapping the Container div when the user is at the top of the page.*/
     margin-bottom: 40px;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 1000px;
-    padding: 1px 20px 1px 20px;
+    max-width: 95vw;
+    padding: 1px 20px 20px 20px;
     box-shadow: 0px 0px 10px black;
     background-color: #C7D5CA;
-    max-height: fit-content;
-}
-
-.imgCont > p {
-    max-width: 400px;
+    text-align: center;
 }
 
 /*Sets the style for content.*/
 .contFeatures {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    color: #FFFFFF;
+    grid-auto-rows: fit-content;
+}
+
+.imgCont {
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    }
-    
-    .imgContOverlayHidden {display: none;}
-    
-    .imgContOverlayRevealed {
-        display: relative;
-        z-index: 4;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        color: #FFFFFF;
-        margin: auto;
-        justify-self:center;
-        background-color: #000000DD;
-        }
-    
-    .overlayHold {
+    justify-content: center;
+    background-color: #102B16;
+    padding: 10px;
+    border-radius: 10px 10px;
+    box-shadow: 0px 0px 10px black;
+    object-fit: cover;
+}
+
+
+/*Handles image styles for content.*/
+.hidImg {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    max-width: 50%;
+    min-height: 200px;
+    max-height: 50vh;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px black;
+    border: 5px solid black;
+    border-radius: 10px 10px;
+}
+
+.imgContOverlayHidden {
+    display: none;
+}
+
+.imgContOverlayRevealed {
+    display: relative;
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    margin: auto;
+    justify-self: center;
+    background-color: #000000DD;
+    border: 1px solid #000000DD;
+}
+
+.overlayHold {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
-    }
-    
-    .contHold > p {
-        max-width: 500px;
-        margin: 20px auto;
-    }
-    
-    .contHold {
-        display: table-cell;
-        margin: 0px;
-        padding: 0px;
-        vertical-align: middle;
-        }
-    
-    .closeIcon {
-        float: right;
-        max-width: 30px;
-        margin: 30px;
-        z-index: 5;
-    }
-    
-    .imgCont {
-        display: block;
-        text-align:center;
-        margin: 10px;
-    }
-    
-    /*Handles image styles for content.*/
-    .hidImg {
-        max-width: 400px;
-        object-fit: cover;
-    }
-    
-    .showImg {
-        max-width: 600px;
-        min-width: 30%;
-        object-fit: contain;
-    }
+
+}
+
+.contHold>p {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.showImg {
+    max-height: 80vh;
+    border: 5px solid black;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px 10px;
+}
+
+.contHold {
+    display: table-cell;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+.closeIcon {
+    float: right;
+    background-image: url("/images/litYelClose.svg");
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+    z-index: 4;
+    border: none;
+    background-size: cover;
+    background-color: #FFFFFF00;
+}
+
+
+.imgCont>img {
+    max-height: 20vh;
+
+}
+
+.showImg {
+    max-width: 600px;
+    min-width: 30%;
+    object-fit: contain;
+}
 
 /*This makes the pages' style properties start snugly in the top left corner.*/
 .main {
@@ -200,180 +253,206 @@ body {
 
 
 /*Media Query that checks if the page is greater than 900 pixels wide, and changes the layout for desktop environments if that is the case.*/
-@media screen and (min-width: 901px) {
-/*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls.*/
-.banner {
-    position: fixed;
-    display: grid;
-    grid-template-columns: 249px 1fr;
-    grid-template-rows: 1;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    padding-left: 20px;
-    padding-top: 2px;
-    padding-right: 40px;
-    padding-bottom: 2px;
-    box-shadow: 0px 0px 10px black;
-    background-color: #F8F8C8;
-}
+@media screen and (min-width: 1001px) {
 
-/*Sets h1 position in the banner grid.*/
-h1 > .banner {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-/*Hides the dropdown menu button when the screen is wide enough to fit the standalone buttons.*/
-#navMenu {
-    display: none;
-}
-
-/*Sets the grid position of the navButtonCont div, establishes an inline-grid for the buttons themselves, and forces a margin on the right side of the div.*/
-.navButtonCont {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: inline-grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-right: 40px;
-}
-
-/*Sets the navButton style*/
-.navButton {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F8F8C8;
-    font-size: 24px;
-    width: 1fr;
-    padding: 5px;
-    margin: 5px;
-    border: none;
-    text-shadow: none;
-    white-space: nowrap;
-    text-overflow: ellipse;
-    transition: color 0.2s, font-size 0.2s, text-shadow 0.2s;
-}
-
-/*Changes the appearance of the banner link to hidden-features.html to indicate that it's the current viewed page.*/
-#featBtn {
-    color:#C7D5CA;
-}
-
-/*Changes navButton properties when the user hovers over navigation buttons.*/
-.navButton:hover {
-    font-size: 26px;
-    text-shadow: 0px 0px 10px #20572b, 0px 0px 5px #20572b;
-    color: #FFFFFF;
-}
-
-/*This is the div where the page's content will be placed.*/
-.container {
-    position: relative;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    border: 0px solid;
-    border-radius: 10px 10px;
-    z-index: 1;
-    margin-top: 110px;
-    /*This is a large value to prevent the banner from overlapping the Container div when the user is at the top of the page.*/
-    margin-bottom: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    max-width: 900px;
-    padding: 1px 20px 20px 20px;
-    box-shadow: 0px 0px 10px black;
-    background-color: #C7D5CA;
-}
-
-/*Sets the style for content.*/
-.contFeatures {
-display: grid;
-grid-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-
-}
-
-.imgCont {
-    display: block;
-    text-align:center;
-    margin: 10px;
-    min-width: 280px;
-}
-
-.imgCont > img {
-    max-width: 100%;
-}
-
-.imgContOverlayHidden {display: none;}
-
-.imgContOverlayRevealed {
-    display: relative;
-    z-index: 4;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    color: #FFFFFF;
-    margin: auto;
-    justify-self:center;
-    background-color: #000000DD;
+    /*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls.*/
+    .banner {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 265px 1fr;
+        grid-template-rows: 1;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 2px;
+        padding-right: 40px;
+        padding-bottom: 2px;
+        box-shadow: 0px 0px 10px black;
+        background-color: #F8F8C8;
     }
 
-.overlayHold {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-margin: 0px;
-}
+    /*Sets h1 position in the banner grid.*/
+    h1>.banner {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 
-.contHold > p {
-    max-width: 500px;
-    margin: 20px auto;
-}
+    /*Hides the dropdown menu button when the screen is wide enough to fit the standalone buttons.*/
+    #navMenu {
+        display: none;
+    }
 
-.contHold {
-    display: table-cell;
-    margin: 0px;
-    padding: 0px;
-    vertical-align: middle;
+    /*Sets the grid position of the navButtonCont div, establishes an inline-grid for the buttons themselves, and forces a margin on the right side of the div.*/
+    .navButtonCont {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: inline-grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-right: 40px;
+    }
+
+    /*Sets the navButton style*/
+    .navButton {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F8F8C8;
+        font-size: 24px;
+        width: 1fr;
+        padding: 5px;
+        margin: 5px;
+        border: none;
+        text-shadow: none;
+        white-space: nowrap;
+        text-overflow: ellipse;
+        transition: color 0.2s, font-size 0.2s, text-shadow 0.2s;
+    }
+
+    /*Changes the appearance of the banner link to hidden-features.html to indicate that it's the current viewed page.*/
+    #featBtn {
+        color: #C7D5CA;
+    }
+
+    /*Changes navButton properties when the user hovers over navigation buttons.*/
+    .navButton:hover {
+        font-size: 26px;
+        text-shadow: 0px 0px 10px #20572b, 0px 0px 5px #20572b;
+        color: #FFFFFF;
+    }
+
+    /*This is the div where the page's content will be placed.*/
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 10px;
+        z-index: 1;
+        margin-top: 110px;
+        /*This is a large value to prevent the banner from overlapping the Container div when the user is at the top of the page.*/
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 1000px;
+        padding: 1px 20px 20px 20px;
+        box-shadow: 0px 0px 10px black;
+        background-color: #C7D5CA;
+        text-align: center;
+    }
+
+    /*Sets the style for content.*/
+    .contFeatures {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        color: #FFFFFF;
+        justify-self: center;
+    }
+
+    .imgCont {
+        display: block;
+        text-align: center;
+        background-color: #102B16;
+        padding: 10px;
+        border-radius: 10px 10px;
+        box-shadow: 0px 0px 10px black;
+        object-fit: cover;
+    }
+
+
+    /*Handles image styles for content.*/
+    .hidImg {
+        width: 500px;
+        height: 500px;
+        box-shadow: 0px 0px 10px black;
+        border: 5px solid black;
+        border-radius: 10px 10px;
     }
 
 
 
-.closeIcon {
-    float: right;
-    max-width: 30px;
-    margin: 30px;
-    z-index: 4;
-    background-image: url("/images/litYelClose.svg");
-    border: none;
-    background-color: none;
-}
+    .imgContOverlayHidden {
+        display: none;
+    }
 
-/*Handles image styles for content.*/
-.hidImg {
-    max-width: 400px;
-    object-fit: cover;
-}
+    .imgContOverlayRevealed {
+        display: relative;
+        z-index: 3;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        color: #FFFFFF;
+        margin: auto;
+        justify-self: center;
+        background-color: #000000DD;
+        border: 1px solid #000000DD;
+    }
 
-.showImg {
-    max-width: 600px;
-    min-width: 30%;
-    object-fit: contain;
-}
+    .overlayHold {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0px;
 
-/*This makes the pages' style properties start snugly in the top left corner.*/
-.main {
-    position: absolute;
-    display:flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+    }
+
+    .contHold>p {
+        max-width: 500px;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .showImg {
+        max-height: 80vh;
+        border: 5px solid black;
+        box-shadow: 0px 0px 15px black;
+        border-radius: 10px 10px;
+        max-width: 600px;
+        min-width: 30%;
+        object-fit: contain;
+    }
+
+
+    .contHold {
+        display: table-cell;
+        margin: 0px;
+        padding: 0px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+
+
+    .closeIcon {
+        float: right;
+        background-image: url("/images/litYelClose.svg");
+        width: 30px;
+        height: 30px;
+        margin: 30px;
+        z-index: 4;
+        border: none;
+        background-size: cover;
+        background-color: #FFFFFF00;
+    }
+
+
+
+    /*This makes the pages' style properties start snugly in the top left corner.*/
+    .main {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 
 }

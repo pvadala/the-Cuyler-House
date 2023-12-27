@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -62,69 +61,82 @@
         <!-- Page-specific content goes in this div-->
         <div class="container">
             <h1>Hidden Features</h1>
-            <p>This is a WIP. Content and formatting subject to change.</p>
 
-            
+            <p>Abolitionists used a diversity of tactics to achieve their goals. Among those tactics were those of
+                subterfuge: hiding in plain sight, falsifying documents, even building homes from the ground-up to
+                provide hidden spaces unknown to the state and difficult to detect by an invading force without close
+                scrutiny. <br> <br> The Cuyler House was one such house.</p>
+
+
+            <h4>Click an image to read more</h4>
+
+
 
             <div class="contFeatures">
                 <div class="imgCont" id="stairsClosedDiv">
                     <img class="hidImg" src="/images/hiddenStairs.jpg"
-                        alt="Image depicting stairs painted dark brown with white walls in a head-on perspective." onclick="overlayActivate(1)">
-                    <p>This staircase has an unassuming appearance, but . In order to hide their subversive and often
-                        illegal activities, abolitionist activists had to resort to creative means of subturfuge, often
-                        hiding documents, resources, or people behind unassuming features.</p>
+                        alt="Image depicting stairs painted dark brown with white walls in a head-on perspective."
+                        onclick="overlayActivate(1)">
+                    <p>This unassuming staircase...</p>
                 </div>
 
                 <div class="imgCont" id="stairsOpenDiv">
                     <img class="hidImg" src="/images/hiddenStairsOpen.jpg"
-                        alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects." onclick="overlayActivate(2)">
-                    <p>This step isn't secured by anything but a hidden hinge, granting a point of access to the empty
-                        space underneath the staircase.</p>
+                        alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects."
+                        onclick="overlayActivate(2)">
+                    <p>Hiding in plain sight...</p>
                 </div>
 
                 <div class="imgCont" id="hiddenPartDiv">
                     <img class="hidImg" src="/images/houseDiagram.jpg"
-                        alt="Image depicting a house blueprint. A Hidden division is marked with pink text." onclick="overlayActivate(3)">
-                    <p>The filled in space on this deed reference shows where a section of the floor plan was designed
-                        to appear inaccessible or unusable, providing a hiding place for freedom seekers from slave
-                        patrols.</p>
+                        alt="Image depicting a house blueprint. A Hidden division is marked with pink text."
+                        onclick="overlayActivate(3)">
+                    <p>Many houses were purpose-built...</p>
                 </div>
 
             </div>
 
         </div>
 
-        
 
-        <div class="imgContOverlayHidden" id="stairsClosedDiv">
+
+        <div class="imgContOverlayHidden" id="stairsClosedDivOver">
             <button class="closeIcon" id="closeOne" onclick="closeOverlay(1)"></button>
             <div class="overlayHold">
                 <div class="contHold">
-            <img class="showImg" src="/images/hiddenStairs.jpg"
-                alt="Image depicting stairs painted dark brown with white walls in a head-on perspective.">
-            <p>This staircase has an unassuming appearance. In order to hide their activities from slavers and oppositional state authorities, abolitionist activists had to resort to creative means of subturfuge, often hiding documents,
-                resources, or people behind unassuming features.</p>
-            </div>
+                    <img class="showImg" src="/images/hiddenStairs.jpg"
+                        alt="Image depicting stairs painted dark brown with white walls in a head-on perspective.">
+                    <p>... obscures its second purpose as a hidden compartment. In order to hide their activities from
+                        slavers and oppositional state authorities, abolitionist activists had to resort to creative
+                        means of subturfuge, often hiding documents, resources, or people behind unassuming features.
+                    </p>
+                </div>
             </div>
         </div>
-    
-        <div class="imgContOverlayHidden" id="stairsOpenDiv">
+
+        <div class="imgContOverlayHidden" id="stairsOpenDivOver">
             <img class="closeIcon" id="closeTwo" src="/images/litYelClose.svg" onclick="closeOverlay(2)">
             <div class="overlayHold">
-            <img class="showImg" src="/images/hiddenStairsOpen.jpg"
-                alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects.">
-            <p>This step isn't secured by anything but a hidden hinge, granting a point of access to the empty space
-                underneath the staircase.</p>
+                <div class="contHold">
+                    <img class="showImg" src="/images/hiddenStairsOpen.jpg"
+                        alt="Image depicting an open compartment embedded in a staircase. Inside the compartment are envelopes and assorted objects.">
+                    <p> ... was a necessity to continue operations. Above is one example. This step isn't secured by
+                        anything but a hinge applied to its underside, creating a secret means of access to the oft
+                        inaccessible space underneath the staircase.</p>
+                </div>
             </div>
         </div>
-    
-        <div class="imgContOverlayHidden" id="hiddenPartDiv">
+
+        <div class="imgContOverlayHidden" id="hiddenPartDivOver">
             <img class="closeIcon" id="closeThree" src="/images/litYelClose.svg" onclick="closeOverlay(3)">
             <div class="overlayHold">
-            <img class="showImg" src="/images/houseDiagram.jpg"
-                alt="Image depicting a house blueprint. A Hidden division is marked with pink text.">
-            <p>The filled in space on this deed reference shows where a section of the floor plan was designed to appear
-                inaccessible or unusable, providing a hiding place for freedom seekers from slave patrols.</p>
+                <div class="contHold">
+                    <img class="showImg" src="/images/houseDiagram.jpg"
+                        alt="Image depicting a house blueprint. A Hidden division is marked with pink text.">
+                    <p>... with these activities in mind. The filled in space on the above deed reference shows where a
+                        section of the floor plan was designed to appear inaccessible or unusable, providing a hiding
+                        place for freedom seekers from slave patrols.</p>
+                </div>
             </div>
         </div>
 
