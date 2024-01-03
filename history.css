@@ -91,30 +91,47 @@ body {
     font-size: 34px;
 }
 
+/*-------------------------------------------------------------------------------------*/
 
 .image-container {
     display: block;
-    background-color: antiquewhite;
-    padding: 15px;
+    background-color: lightgreen;
     grid-template-columns: auto auto auto;
-    column-gap: 100px;
+    column-gap: 200px;
     row-gap: 50px;
     text-align: center;
-    padding: 15px;
+    padding: 35px;
+    font-size: 30px;
+    
+    
+}
+
+
+.child-container{
+
+    display: block;
+    background-color: rgb(203, 219, 204);
+    grid-template-columns: auto auto auto;
+    column-gap: 400px;
+    row-gap: 50px;
+    text-align: center;
+    padding: 25px;
     font-size: 30px;
 }
 
 
 h1 {
     text-align: center;
-    font-size: 25px;
+    font-style: normal;
+    font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 p {
+    font-weight: 100;
     text-align: center;
-    font-size: 15px;
+    font-size: 23px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -124,7 +141,14 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+img {
+    border: 5px solid #a7bdab;
+}
 
+img:hover {
+    filter: grayscale(100%);
+    invert(100%;)
+}
 
 
 .read-more {
@@ -141,13 +165,13 @@ h3 {
 
 
 .read-more:hover {
-    background-color: rgb(63, 113, 85);
+    background-color: green;
     border-color: black;
-    color:white;
+    color: white;
     cursor: pointer;
 }
    
-
+/*-------------------------------------------------------------------------------------*/
 
 
 
@@ -215,6 +239,7 @@ h3 {
 
 @media screen and (min-width: 1001px){
     /*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls.*/
+
 .banner {
     position: fixed;
     display: grid;
@@ -281,6 +306,12 @@ h1 > .banner {
       width: 100%;
     }
 }
+
+
+
+
+
+
 
 
 
