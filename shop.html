@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cuyler House - TEMPLATE</title>
     <link rel="stylesheet" href="wrapper.css">    <!--  GROUP 4 WRAPPER STYLES  -->
-    <link rel="stylesheet" href="shop2.css">    <!--  SHOP STYLES -->
-    <script src="script.js"></script> <!--Link to the javascript file that holds our JS functions.-->
-
-    <!--Change the .css file your .html file links to in case you need specific style changes for your page.-->
-    <script src="script.js"></script> <!--Link to the javascript file that holds our JS functions.-->
+    <link rel="stylesheet" href="shop.css">      <!--  SHOP STYLES -->
+    <script src="script.js"></script>             <!--  Group 4 JS FOR HAMBURGER MENU  -->       
 </head>
 
 <body>
@@ -26,12 +23,14 @@
                 <button class="navButton" id="homeBtn" onclick="location.href='/index.html'">Home</button>
                 <button class="navButton" id="histBtn" onclick="location.href='/history.html'">History</button>
                 <button class="navButton" id="mapBtn" onclick="location.href='/maps.html'">Maps & Charts</button>
-                <button class="navButton" id="featBtn" onclick="location.href='/hidden-features.html'">Hidden
-                    Features</button>
+                <!--<button class="navButton" id="featBtn" onclick="location.href='/hidden-features.html'">Hidden
+                    Features</button>-->
                 <button class="navButton" id="storeBtn" onclick="location.href='/shop.html'">Shop</button>
+                <button class="navButton" id="cartBtn"><a href="cart.html"><ion-icon name="basket"></ion-icon>Cart<span>0</span></a></button>
+                <!--<button class="navButton" id="cartBtn" onclick="location.href='/cart.html'"><<ion-icon name="basket"></ion-icon>Cart<span>0</span></button>-->
             </div>
 
-            <!--Shown when screen width < 900px>.-->
+            <!--  Burger Menu - Shown when screen width < 900px>-->
             <div id="navMenu">
                 <!--dropButton activates a JavaScript function that toggles the menu's visibility on/off and changes the icon used in the button between two files.-->
                 <button id="dropButton" onclick="dropMenu()"><img id="navMenuToggle"
@@ -48,8 +47,9 @@
                     <button class="menuButton" id="featMenuBtn" onclick="location.href='/hidden-features.html'">Hidden
                         Features</button>
                     <button class="menuButton" id="storeMenuBtn" onclick="location.href='/shop.html'">Shop</button>
-
-
+                    <!--<button class="menuButton"><a href="cart.html"><ion-icon name="basket"></ion-icon>Cart<span>0</span></a></button>-->
+                    <button class="menuButton" id="cartBtn" onclick="location.href='/cart.html'"><ion-icon name="basket"></ion-icon> Cart  <span> 0</span></button>
+                
                 </div>
 
             </div>
@@ -67,35 +67,35 @@
 
             <!--                      SHIRTS SECTION                     -->
             <div class="shopFlex">
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/shirts/Shirt-Douglas.png"><img src="/images/shirts/Shirt-Douglas.png"></a>
                     <h5 class="h5Store">Douglass T-shirt</h5> 
                     <h5 class="Price">Price $20</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>           
+                    <button class="addToCartBtn">Add to Cart</button>           
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Shirts/Shirt-Douglas2.png"><img src="/images/Shirts/Shirt-Douglas2.png"></a>
                     <h5 class="h5Store">Douglass T-shirt</h5> 
                     <h5 class="Price">Price $20</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn">Add to Cart</button>            
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Shirts/Shirt-Tubman.png"><img src="/images/Shirts/Shirt-Tubman.png"></a>
                     <h5 class="h5Store">Harriet Tubman T-shirt</h5>
                     <h5 class="Price">Price $20</h5>   
-                    <button class="cartBtn btn">Add to Cart</button>          
+                    <button class="addToCartBtn btn3">Add to Cart</button>          
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Shirts/Shirt-Tubman2.png"><img src="/images/Shirts/Shirt-Tubman2.png"></a>
                     <h5 class="h5Store">Tubman Light T-shirt</h5>  
                     <h5 class="Price">Price $20</h5>  
-                    <button class="cartBtn btn">Add to Cart</button>                
+                    <button class="addToCartBtn btn4">Add to Cart</button>                
                 </div>        
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Shirts/Shirt-Truth.png"><img src="/images/Shirts/Shirt-Truth.png"></a>
                     <h5 class="h5Store">Truth Pop Art T-shirt</h5>   
                     <h5 class="Price">Price $20</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>                
+                    <button class="addToCartBtn btn5">Add to Cart</button>                
                 </div>                
             </div>   <!--                        END OF SHIRTS SECTION                    -->
 
@@ -105,65 +105,65 @@
             <h3 class="H3Store">(Click on image to zoom in)</h3>
 
             <div class="shopFlex">
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-CaptivatingHistory.png"><img src="/images/Books/Book-CaptivatingHistory.png"></a>
                     <h5 class="h5Store">Underground Railroad Bundle</h5> 
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>  
+                    <button class="addToCartBtn btn">Add to Cart</button>  
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Clara.png"><img src="/images/Books/Book-Clara.png"></a>
                     <h5 class="h5Store">Sweet Clara and the Freedom Quilt</h5>
                     <h5 class="Price">Price $15</h5>  
-                    <button class="cartBtn btn">Add to Cart</button>           
+                    <button class="addToCartBtn btn">Add to Cart</button>           
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Escape.png"><img src="/images/Books/Book-Escape.png"></a>
                     <h5 class="h5Store">Esape to Freedom</h5> 
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn btn">Add to Cart</button>            
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Gateway.png"><img src="/images/Books/Book-Gateway.png"></a>
                     <h5 class="h5Store">Gateway to Freedom</h5>  
                     <h5 class="Price">Price $15</h5>  
-                    <button class="cartBtn btn">Add to Cart</button>          
+                    <button class="addToCartBtn btn">Add to Cart</button>          
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Gourd.png"><img src="/images/Books/Book-Gourd.png"></a>
                     <h5 class="h5Store">Follow the Drinking Gourd</h5>
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Hidden.png"><img src="/images/Books/Book-Hidden.png"></a>
                     <h5 class="h5Store">Hidden in Plain View</h5>   
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>          
+                    <button class="addToCartBtn btn">Add to Cart</button>          
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-IfYouTraveled.png"><img src="/images/Books/Book-IfYouTraveled.png"></a>
                     <h5 class="h5Store">If You Traveled on the <br> Underground Railroad</h5>    <!-- Try to find a more elegant way to wrap this text-->
                     <h5 class="Price">Price $15</h5>  
-                    <button class="cartBtn btn">Add to Cart</button>          
+                    <button class="addToCartBtn btn">Add to Cart</button>          
                 </div>  
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Migration.png"><img src="/images/Books/Book-Migration.png"></a>
                     <h5 class="h5Store">The Great Migration</h5>  
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn btn">Add to Cart</button>            
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-Quilts.png"><img src="/images/Books/Book-Quilts.png"></a>
                     <h5 class="h5Store">Quilts & Slavery</h5>  
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn btn">Add to Cart</button>            
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Books/Book-FreedomBox.png"><img src="/images/Books/Book-FreedomBox.png"></a>
                     <h5 class="h5Store">Henry's Freedom Box</h5>
                     <h5 class="Price">Price $15</h5>  
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn btn">Add to Cart</button>            
                 </div>  
             </div>  <!--                        END OF BOOKS SECTION                    -->
 
@@ -173,89 +173,89 @@
             <h2 class="H2Store">Posters & Quilts</h2>
             <h3 class="H3Store">(Click on images to zoom in)</h3>
             <div class="shopFlex">
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Quilt-Truth.png"><img src="/images/Posters/Poster-Quilt-Truth.png"></a>
                     <h5 class="h5Store">Sojourner Truth Quilt Poster</h5>   
                     <h5 class="Price">Price $15</h5>   
-                    <button class="cartBtn btn">Add to Cart</button>        
+                    <button class="addToCartBtn btn">Add to Cart</button>        
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Quilt.png"><img src="/images/Posters/Poster-Quilt.png"></a>
                     <h5 class="h5Store">Quilt Map Poster </h5>   
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>          
+                    <button class="addToCartBtn btn">Add to Cart</button>          
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Douglas2.png"><img src="/images/Posters/Poster-Douglas2.png"></a>
                     <h5 class="h5Store">Douglass Quote Poster</h5>
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Douglas.png"><img src="/images/Posters/Poster-Douglas.png"></a>
                     <h5 class="h5Store">Douglass Quote Poster</h5>  
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>           
+                    <button class="addToCartBtn btn">Add to Cart</button>           
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Douglass.png"><img src="/images/Posters/Poster-Douglass.png"></a>
                     <h5 class="h5Store">Douglas Reading Quote Poster</h5>  
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn btn">Add to Cart</button>            
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Ringgold1.png"><img src="/images/Posters/Poster-Ringgold1.png"></a>
                     <h5 class="h5Store">Harriet Tubman Quilt Poster</h5>  
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>            
+                    <button class="addToCartBtn btn">Add to Cart</button>            
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Ringgold2.png"><img src="/images/Posters/Poster-Ringgold2.png"></a>
                     <h5 class="h5Store">Harriet Tubman Quilt Poster</h5>   
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>           
+                    <button class="addToCartBtn btn">Add to Cart</button>           
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Truth.png"><img src="/images/Posters/Poster-Truth.png"></a>
                     <h5 class="h5Store">Ain't I a Woman Poster</h5>
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>              
+                    <button class="addToCartBtn btn">Add to Cart</button>              
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Truth3.png"><img src="/images/Posters/Poster-Truth3.png"></a>
                     <h5 class="h5Store">Truth Will Prevail Poster</h5>
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Truth2.png"><img src="/images/Posters/Poster-Truth2.png"></a>
                     <h5 class="h5Store">Truth Pop Art Poster</h5>
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-Tubman.png"><img src="/images/Posters/Poster-Tubman.png"></a>
                     <h5 class="h5Store">Tubman Pop Art Poster</h5>
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-TubmanDream.png"><img src="/images/Posters/Poster-TubmanDream.png"></a>
                     <h5 class="h5Store">Tubman Dream Poster</h5>
                     <h5 class="Price">Price $15</h5> 
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-TubmanDream2.png"><img src="/images/Posters/Poster-TubmanDream2.png"></a>
                     <h5 class="h5Store">Tubman Dream Poster</h5>
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Posters/Poster-TubmanLight.png"><img src="/images/Posters/Poster-TubmanLight.png"></a>
                     <h5 class="h5Store">Tubman Light Poster</h5>
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>              
+                    <button class="addToCartBtn btn">Add to Cart</button>              
                 </div>          
                 
             </div> <!--                        END OF POSTERS SECTION                    -->
@@ -266,23 +266,23 @@
             <h2 class="H2Store">Maps</h2>
             <h3 class="H3Store">(Click on images to zoom in)</h3>
             <div class="shopFlex">
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Maps/Map-FreedomTrail.png"><img src="/images/Maps/Map-FreedomTrail.png"></a>
                     <h5 class="h5Store">NYC Freedom Trail Map</h5>   
                     <h5 class="Price">Price $15</h5>   
-                    <button class="cartBtn btn">Add to Cart</button>        
+                    <button class="addToCartBtn btn">Add to Cart</button>        
                 </div>
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Maps/Map-Syr1852.png"><img src="/images/Maps/Map-Syr1852.png"></a>
                     <h5 class="h5Store">Syracuse 1852 Map</h5>
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>             
+                    <button class="addToCartBtn btn">Add to Cart</button>             
                 </div> 
-                <div class="polaroid">
+                <div class="productContainer">
                     <a href="/images/Maps/Map-US.png"><img src="/images/Maps/Map-US.png"></a>
                     <h5 class="h5Store">US Map</h5>
                     <h5 class="Price">Price $15</h5>
-                    <button class="cartBtn btn">Add to Cart</button>              
+                    <button class="addToCartBtn btn">Add to Cart</button>              
                 </div>  
             </div>  <!--                          END OF MAPS SECTION                         -->
             
@@ -293,6 +293,12 @@
 
 
     </div>
+
+    <!--                    ADD THE FOLLOWING SCRIPTS TO THE BOTTOM OF EVERYONE'S PAGE SO THEY HAVE THE SHOPPING BASKET                   -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>  <!-- plug-in for the basket icon-->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>           <!-- plug-in for the basket icon-->
+    
+    <script src="shop.js"></script>               <!--  SHOPPING CART JS (MUST BE AT THE BOTTOM OF THE PAGE FOR JS TO FUNCTION PROPERLY)-->
 </body>
 
 </html>
