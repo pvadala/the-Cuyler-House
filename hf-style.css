@@ -101,7 +101,7 @@ body {
 }
 
 /*This is the div where the page's content will be placed.*/
-.container {
+.containerVis {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -122,6 +122,10 @@ body {
     box-shadow: 0px 0px 10px black;
     background-color: #C7D5CA;
     text-align: center;
+}
+
+.containerHide {
+    display: none;
 }
 
 /*Sets the style for content.*/
@@ -187,6 +191,8 @@ body {
     background-color: #000000DD;
     border: 1px solid #000000DD;
 }
+
+
 
 .overlayHold {
     position: absolute;
@@ -334,7 +340,7 @@ body {
     }
 
     /*This is the div where the page's content will be placed.*/
-    .container {
+    .containerVis {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -350,6 +356,10 @@ body {
         box-shadow: 0px 0px 10px black;
         background-color: #C7D5CA;
         text-align: center;
+    }
+
+    .containerHide {
+        display: none;
     }
 
     /*Sets the style for content.*/

@@ -15,6 +15,8 @@ function overlayActivate(input) {
     else if (input == 3) {
         document.getElementById("hiddenPartDivOver").className = "imgContOverlayRevealed";
     }
+
+    document.getElementById("container").className = "containerHide";
 }
 
 function closeOverlay(closeInput) {
@@ -30,4 +32,5 @@ function closeOverlay(closeInput) {
     else if (closeInput == 3) {
         document.getElementById("hiddenPartDivOver").className = "imgContOverlayHidden";
     }
+    document.getElementById("container").className = "containerVis";
 }
