@@ -4,38 +4,33 @@
 function overlayActivate(input) {
 
     if (input == 1) {
-
-        document.getElementById("stairsClosedDiv").className = "imgContOverlayRevealed";
-
-
+        document.getElementById("stairsClosedDivOver").className = "imgContOverlayRevealed";
     }
 
     else if (input == 2) {
 
-        document.getElementById("stairsOpenDiv").className = "imgContOverlayRevealed";
-
-
+        document.getElementById("stairsOpenDivOver").className = "imgContOverlayRevealed";
     }
 
     else if (input == 3) {
-
-        document.getElementById("hiddenPartDiv").className = "imgContOverlayRevealed";
-
-
+        document.getElementById("hiddenPartDivOver").className = "imgContOverlayRevealed";
     }
+
+    document.getElementById("container").className = "containerHide";
 }
 
-function close(closeInput) {
+function closeOverlay(closeInput) {
 
     if (closeInput == 1) {
-        document.getElementById("stairsClosedDiv").className = "imgContOverlayHidden";
+        document.getElementById("stairsClosedDivOver").className = "imgContOverlayHidden";
     }
 
     else if (closeInput == 2) {
-        document.getElementById("stairsOpenDiv").className = "imgContOverlayHidden";
+        document.getElementById("stairsOpenDivOver").className = "imgContOverlayHidden";
     }
 
     else if (closeInput == 3) {
-        document.getElementById("hiddenPartDiv").className = "imgContOverlayHidden";
+        document.getElementById("hiddenPartDivOver").className = "imgContOverlayHidden";
     }
+    document.getElementById("container").className = "containerVis";
 }

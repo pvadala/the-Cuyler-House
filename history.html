@@ -17,125 +17,185 @@
 
         <div class="banner">
             <!--Header is a placeholder; modify it as needed to reflect page contents-->
-            <h1>History</h1>
-            <button class="navButton" id="homeBtn">Home</button>
-            <button class="navButton" id="histBtn">History</button>
-            <button class="navButton" id="mapBtn">Maps & Charts</button>
-            <button class="navButton" id="featBtn">Features</button>
-            <button class="navButton" id="linkBtn">Links</button>
+            <h1>The Cuyler House</h1>
+
+            <!--Should be hidden when screen width is narrow enough to interfere with navigation-->
+            <div class="navButtonCont">
+                <button class="navButton" id="homeBtn" onclick="location.href='/index.html'">Home</button>
+                <button class="navButton" id="histBtn" onclick="location.href='/history.html'">History</button>
+                <button class="navButton" id="mapBtn" onclick="location.href='/maps.html'">Maps & Charts</button>
+                <button class="navButton" id="featBtn" onclick="location.href='/hidden-features.html'">Hidden
+                    Features</button>
+                <button class="navButton" id="storeBtn" onclick="location.href='/shop.html'">Shop</button>
+            </div>
+
+            <!--Should be hidden when screen width isn't too narrow.-->
+            <div id="navMenu">
+                <!--dropButton activates a JavaScript function that toggles the menu's visibility on/off and changes the icon used in the button between two files.-->
+                <button id="dropButton" onclick="dropMenu()"><img id="navMenuToggle"
+                        src="/images/default-menu-burger.svg" alt="Dropdown Navigation Menu Toggle"></button>
+
+                <!--This div's class toggles between closedMenuCont and openMenuCont each time dropButton is clicked, revealing or hiding its contents.-->
+                <div id="navMenuCont" class="closedMenuCont">
+
+                    <!--Buttons that act as clickable links to other pages on the site.-->
+                    <button class="menuButton" id="homeMenuBtn" onclick="location.href='/index.html'">Home</button>
+                    <button class="menuButton" id="histMenuBtn" onclick="location.href='/history.html'">History</button>
+                    <button class="menuButton" id="mapMenuBtn" onclick="location.href='/maps.html'">Maps &
+                        Charts</button>
+                    <button class="menuButton" id="featMenuBtn" onclick="location.href='/hidden-features.html'">Hidden
+                        Features</button>
+                    <button class="menuButton" id="storeMenuBtn" onclick="location.href='/shop.html'">Shop</button>
+
+
+                </div>
+
+            </div>
+
         </div>
 
 
-        
+
+
         <div class="image-container"> <!--Parent Container-->
             <h1>Hawley-Green Historic District and<br> Underground Railroad</h1>
 
             <p>The Story Of this Historic Neighborhood,of <br> "Hawley-Green District"</p>
-            <p>The Hawley-Green Historic District is a historic neighborhood in Syracuse, New York.It was a stop on the Underground Railroad,<br>which helped enslaved African Americans flee to freedom.Hawley Green stands as a testament to the city's historical roots, having been<br>established in the 1800s.<br> The architectural charm of the homes that line its streets tells a story of the past, showcasing a unique blend <br> of styles that have evolved over the decades.</p>
-
-            <a href="https://www.livingplaces.com/NY/Onondaga_County/Syracuse_City/Hawley-Green_Street_Historic_District.html"class="read-more" target="_blank">Read More</a>
+            <p>The Hawley-Green Historic District is a historic neighborhood in Syracuse, New York.It was a stop on the
+                Underground Railroad,<br>which helped enslaved African Americans flee to freedom.Hawley Green stands as
+                a testament to the city's historical roots, having been<br>established in the 1800s.<br> The
+                architectural charm of the homes that line its streets tells a story of the past, showcasing a unique
+                blend <br> of styles that have evolved over the decades.</p>
+                
+            <a href="https://www.livingplaces.com/NY/Onondaga_County/Syracuse_City/Hawley-Green_Street_Historic_District.html"
+                class="read-more" target="_blank">Read More</a>
+                <br>   
             <br>
             <h3>
-            <a href="https://www.visitsyracuse.com/things-to-do/neighborhoods-towns/hawley-green/">Click Here To Go To The District</a>
-    
+                <a href="https://www.visitsyracuse.com/things-to-do/neighborhoods-towns/hawley-green/">Click Here To Go
+                    To The District</a>
+
             </h3>
 
             <!--below is the First Click for the main photo on the top-->
 
-                <div class="image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/HawleyGreenRowhouses.JPG/800px-HawleyGreenRowhouses.JPG" width="225px height 200px"alt="Historic Hawley-Green">
-        
-                <img src="images/Syracuse_NY_203_Green_St_photo_S_Gruber_2015 (1).jpg" width="225px height 300px"alt="Historic Hawley-Green">
+            <div class="container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/HawleyGreenRowhouses.JPG/800px-HawleyGreenRowhouses.JPG"
+                    width="250px height 200px" alt="Historic Hawley-Green">
 
-                <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/HawleyGreenRowhouses.JPG/800px-HawleyGreenRowhouses.JPG" width="225px height 200px"alt="Historic Hawley-Green"-->
-
-                <img src="images/Syracuse_NY_203_Green_St_photo_S_Gruber (43).JPG" width="225px height 200px"alt="Historic Hawley-Green">
-
-        
-               <!--<a href="https://www.livingplaces.com/NY/Onondaga_County/Syracuse_City/Hawley-Green_Street_Historic_District.html"class="read-more" target="_blank">Read More</a>-->
-               <br>
-               <a href="https://www.historicgreenstreet.com/ourhistory"class="read-more" target="_blank">Houses</a>
-
-               <a href="https://mag.syr.edu/syracuse-blocks/hawley-green"class="read-more" target="_blank">Neighborhood</a>
-               <br><br>
-               <a href="https://www.livingplaces.com/NY/Onondaga_County/Syracuse_City/Hawley-Green_Street_Historic_District.html"class="read-more" target="_blank">Read More</a>
-
-               <br>
-               <br>
-
-              </div>
-
-            <!---------------2nd Container Jermain------------------>  
-       
-       
-                <div class="image-container">
-           
-                <h1>Jermain Wesley Loguen<h1><br>
-                <p>Was a abolitionist, he helped over 1500<br> freedom seekers escaping form the south where slavery.<br>He escaped to Canada and then settled in New York, where he ran a school and<br> an Underground Railroad station. he lived in the Hawley-Green district of <br>Syracuse, NY and had a major impacted along with harriet tubman and <br>Frederick Douglas in the Hawley-Green district </p>
+                <img src="images/Syracuse_NY_203_Green_St_photo_S_Gruber_2015 (1).jpg" width="250px" height="190px" 
+                    alt="Historic Hawley-Green">
 
                 
-                <div class="text-container">
-                    <h3><a href="https://www.nationalabolitionhalloffameandmuseum.org/jermain-wesley-loguen.html">Click Here To Go To His Biography</a>
-    
-  
-  
-                <div class="image-container">
-               
-                <img src="https://freedomcenter.org/wp-content/uploads/2023/06/Loguen1.jpg" width="210px"height 90px "alt="Jermain Wesley Loguen">
-  
-                <img src="images/Loguen7.jpg" width="200px"height 90px "alt="Jermain Wesley Loguen">
 
-                <img src="images/Loguen7.jpg" width="200px"height 90px "alt="Jermain Wesley Loguen">
+                <img src="images/Syracuse_NY_203_Green_St_photo_S_Gruber (43).JPG" width="253px height 200px"
+                    alt="Historic Hawley-Green">
 
-                <img src="images/Loguen7.jpg" width="200px"height 90px "alt="Jermain Wesley Loguen">
 
+            
                 <br>
-                <br> 
-                 
-                <a href="https://freedomcenter.org/heroes/jermain-wesley-loguen/"  class="read-more" target="_blank">Freedom Trail</a>
-                </h3>
+                <a href="https://www.historicgreenstreet.com/ourhistory" class="read-more" target="_blank">Houses</a>
+
+                <a href="https://mag.syr.edu/syracuse-blocks/hawley-green" class="read-more"
+                    target="_blank">Neighborhood</a>
+                <br><br>
+                <a href="https://www.livingplaces.com/NY/Onondaga_County/Syracuse_City/Hawley-Green_Street_Historic_District.html"
+                    class="read-more" target="_blank">Historic District</a>
 
                 <br>
                 <br>
 
-                </div>
+            </div>
+            <br> 
 
-        <!---------------3rd Container Harriet------------------>
 
-                <div class="image-container">
-           
-                <h1>Harriet Tubman<h1><br>
-                <p> Harriet Tubman along with Jeremiah Wesley Loguen, helped enslaved people <br>flee to freedom through the Underground Railroad,<br> a secret network of routes and safe houses in the United States. <br>Tubman was a leader, given the 0nick name the conductor.<br> their path was going through the Hawley-Green District,<br> she lived in the Hawley-Green district of <br>Syracuse, NY </p>
-                </p>
-    
-                    
-                <div class="text-container">
-                <h3><a href="https://www.biography.com/activists/harriet-tubman">Click Here To Go To Her Biography</a>
-        
-      
-      
-                <div class="image-container">
+        <hr>
 
-                <img src="https://www.womenshistory.org/sites/default/files/styles/main_image/public/images/2017-07/HarrietTubmanSquare.jpg?itok=bTOKy2mR" width="215px" height="225px" alt="Harriet Tubman">
 
-                <img src="images/harriet_tubman_x_2.webp" width="215px" height="225px" alt="Harriet Tubman">
+            <!---------------2nd Container Jermain------------------>
 
-                <img src="images/NPG-NPG_2006_86Tubman_d1.jpg" width="215px" height="225px" alt="Harriet Tubman">
-                <br>
-                <br> 
-                     
-                 <a href="https://www.history.com/topics/black-history/harriet-tubman" class="read-more" target="_blank">Her Story</a>
-                </h3>
-    
-  
 
- 
+            <div class="child-container">
+
+                <h1>Jermain Wesley Loguen<h1><br>
+                        <p>Was a abolitionist, he helped over 1500<br> freedom seekers escaping form the south where
+                            slavery.<br>He escaped to Canada and then settled in New York, where he ran a school and<br>
+                            an Underground Railroad station. he lived in the Hawley-Green district of <br>Syracuse, NY
+                            and had a major impacted along with harriet tubman and <br>Frederick Douglas in the
+                            Hawley-Green district </p>
+
+
+                        <div class="text-container">
+                            <h3><a
+                                    href="https://www.nationalabolitionhalloffameandmuseum.org/jermain-wesley-loguen.html">Click
+                                    Here To Go To His Biography</a>
+
+
+
+                                <div class="child-container">
+
+                                    <img src="https://freedomcenter.org/wp-content/uploads/2023/06/Loguen1.jpg"
+                                    width="215px" height="250px" alt="Jermain Wesley Loguen">
+
+                                    <img src="images/Loguen7.jpg" width="215px" height="250px" alt="The Freeddom Trail">
+
+                                    <img src="images/Loguen3.jpg" width="215px" height="250px" alt="Rev Loguen">
+
+
+                                    <br>
+                                    <br>
+
+                                    <a href="https://freedomcenter.org/heroes/jermain-wesley-loguen/" class="read-more"
+                                        target="_blank">Freedom Trail</a>
+                            </h3>
+
+                            <br>
+                            <br>
+
+                        </div>
+
+                        <hr>
+
+                        <!---------------3rd Container Harriet------------------>
+
+                        <div class="child-container">
+
+                            <h1>Harriet Tubman<h1><br>
+                                    <p> Harriet Tubman along with Jeremiah Wesley Loguen, helped enslaved people
+                                        <br>flee to freedom through the Underground Railroad,<br> a secret network of
+                                        routes and safe houses in the United States. <br>Tubman was a leader, given the
+                                        0nick name the conductor.<br> their path was going through the Hawley-Green
+                                        District,<br> she lived in the Hawley-Green district of <br>Syracuse, NY </p>
+                                    </p>
+                                    <br> 
+
+                                    <div class="text-container">
+                                        <h3><a href="https://www.biography.com/activists/harriet-tubman">Click Here To
+                                                Go To Her Biography</a>
+
+
+
+                                            <div class="child-container">
+
+                                                <img src="https://www.womenshistory.org/sites/default/files/styles/main_image/public/images/2017-07/HarrietTubmanSquare.jpg?itok=bTOKy2mR"
+                                                    width="215px" height="225px" alt="Harriet Tubman">
+
+                                                <img src="images/harriet_tubman_x_2.webp" width="215px" height="225px"
+                                                    alt="Harriet Tubman">
+
+                                                <img src="images/NPG-NPG_2006_86Tubman_d1.jpg" width="215px"
+                                                    height="225px" alt="Harriet Tubman">
+                                                <br>
+                                                <br>
+
+                                                <a href="https://www.history.com/topics/black-history/harriet-tubman"
+                                                    class="read-more" target="_blank">Her Story</a>
+                                        </h3>
+
+
+
+
 
 </body>
 
 </html>
-
-
-
-
-
