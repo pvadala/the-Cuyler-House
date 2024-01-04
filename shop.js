@@ -33,9 +33,7 @@ let products = [
         tag: 'Shirt-Truth',
         price: 20,
         inCart: 0
-    }
-    /*,
-
+    },
     {
         name: 'Railroad Bundle',
         tag: 'Book-Bundle',
@@ -86,21 +84,19 @@ let products = [
     },
     {
         name: 'Unraveling the History of Quilts and Slavery',
-        tag: 'Book-Unraveling',
+        tag: 'Book-Quilts',
         price: 25,
         inCart: 0
     },
     {
-        name: 'Henry's Freedom Box',
-        tag: 'Book-Henry',
+        name: 'Henrys Freedom Box',
+        tag: 'Book-FreedomBox',
         price: 15,
         inCart: 0
-    }/*
-
-    /*
+    },
     {
         name: 'Truth Quilt Poster',
-        tag: 'Poster-Truth',
+        tag: 'Poster-QuiltTruth',
         price: 25,
         inCart: 0
     },
@@ -112,36 +108,36 @@ let products = [
     },
     {
         name: 'Douglass Quote Poster',
-        tag: 'Poster-Depth',
+        tag: 'Poster-DouglassDepth',
         price: 15,
         inCart: 0
     },
     {
         name: 'Build Strong Children Poster',
-        tag: 'Poster-Strong',
+        tag: 'Poster-DouglassStrong',
         price: 25,
         inCart: 0
     },
     {
-        name: 'Douglass Reading Poster,
-        tag: 'Poster-Reading',
+        name: 'Douglass Reading Poster',
+        tag: 'Poster-DouglassRead',
         price: 15,
         inCart: 0
     },
     {
-        name: 'Tubman Quilt Poster',
-        tag: 'Poster-Tubman1',
+        name: 'Tubman Ringgold Quilt Poster',
+        tag: 'Poster-Ringgold1',
         price: 25,
         inCart: 0
     },
     {
-        name: 'Tubman Quilt Poster2',
-        tag: 'Poster-Tubman2',
+        name: 'Tubman Ringgold Red Quilt Poster',
+        tag: 'Poster-Ringgold2',
         price: 20,
         inCart: 0
     },
     {
-        name: 'Ain't I a Woman Poster',
+        name: 'Aint I a Woman Poster',
         tag: 'Poster-TruthWoman',
         price: 15,
         inCart: 0
@@ -166,13 +162,13 @@ let products = [
     },
     {
         name: 'Tubman Dream Poster',
-        tag: 'Poster-Truth',
+        tag: 'Poster-TubmanDream',
         price: 15,
         inCart: 0
     },
     {
         name: 'Tubman Dream Poster2',
-        tag: 'Poster-Truth',
+        tag: 'Poster-TubmanDream2',
         price: 15,
         inCart: 0
     },
@@ -181,10 +177,7 @@ let products = [
         tag: 'Poster-TubmanLight',
         price: 15,
         inCart: 0
-    },
-    /*
-    
-    /*
+    },   
     {
         name: 'NYC Freedom Trail Map',
         tag: 'Map-NYCTrail',
@@ -202,11 +195,9 @@ let products = [
         tag: 'Map-USTrail',
         price: 15,
         inCart: 0
-    },
+    }
 
-
-
-    */
+ 
 
     /***************  ADD MORE PRODUCTS LATER  ************/
 ]
@@ -313,7 +304,7 @@ function displayCart(){
 
     let cartContainer = document.querySelector(".productRows");
     let cartTotal = localStorage.getItem('totalCost');
-
+    
     console.log("Here's the cart items: ", cartItems);
     if( cartItems  && cartContainer ) {                         // if there's items in the cart and there is a cart container
         cartContainer.innerHTML = '';                           // initialize the innerHTML
@@ -324,7 +315,7 @@ function displayCart(){
             cartContainer.innerHTML += `
                 <div class="productCol">
                     <ion-icon name="close-circle"></ion-icon> 
-                    <img src="./images/Shirts/${item.tag}.png">                                
+                    <img src="./images/${item.tag}.png">                                
                     <span class="productName">${item.name}</span>
                 </div>
                 <div class="priceCol">${item.price}.00</div>
