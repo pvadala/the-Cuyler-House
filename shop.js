@@ -41,7 +41,170 @@ let products = [
         tag: 'Book-Bundle',
         price: 25,
         inCart: 0
-    }
+    },    
+    {
+        name: 'Sweet Clara',
+        tag: 'Book-Clara',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Escape to Freedom',
+        tag: 'Book-Escape',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Gateway to Freedom',
+        tag: 'Book-Gateway',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Follow the Drinking Gourd',
+        tag: 'Book-Gourd',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Hidden in Plain View',
+        tag: 'Book-Hidden',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'If You Traveled on the Underground Railroad',
+        tag: 'Book-Traveled',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'The Great Migration',
+        tag: 'Book-Migration',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Unraveling the History of Quilts and Slavery',
+        tag: 'Book-Unraveling',
+        price: 25,
+        inCart: 0
+    },
+    {
+        name: 'Henry's Freedom Box',
+        tag: 'Book-Henry',
+        price: 15,
+        inCart: 0
+    }/*
+
+    /*
+    {
+        name: 'Truth Quilt Poster',
+        tag: 'Poster-Truth',
+        price: 25,
+        inCart: 0
+    },
+    {
+        name: 'Quilt Map Poster',
+        tag: 'Poster-QuiltMap',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Douglass Quote Poster',
+        tag: 'Poster-Depth',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Build Strong Children Poster',
+        tag: 'Poster-Strong',
+        price: 25,
+        inCart: 0
+    },
+    {
+        name: 'Douglass Reading Poster,
+        tag: 'Poster-Reading',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Tubman Quilt Poster',
+        tag: 'Poster-Tubman1',
+        price: 25,
+        inCart: 0
+    },
+    {
+        name: 'Tubman Quilt Poster2',
+        tag: 'Poster-Tubman2',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Ain't I a Woman Poster',
+        tag: 'Poster-TruthWoman',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Truth Will Prevail Poster',
+        tag: 'Poster-TruthPrevails',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Truth Pop Art Poster',
+        tag: 'Poster-TruthPop',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Tubman Pop Art Poster',
+        tag: 'Poster-TubmanPop',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Tubman Dream Poster',
+        tag: 'Poster-Truth',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Tubman Dream Poster2',
+        tag: 'Poster-Truth',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Tubman Light Poster',
+        tag: 'Poster-TubmanLight',
+        price: 15,
+        inCart: 0
+    },
+    /*
+    
+    /*
+    {
+        name: 'NYC Freedom Trail Map',
+        tag: 'Map-NYCTrail',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'Syracuse 1852 Map',
+        tag: 'Map-Syr1852',
+        price: 15,
+        inCart: 0
+    },
+    {
+        name: 'US Freedom Trail Map',
+        tag: 'Map-USTrail',
+        price: 15,
+        inCart: 0
+    },
+
+
 
     */
 

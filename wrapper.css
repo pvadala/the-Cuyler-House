@@ -103,7 +103,7 @@ body {
 }
 
 .navButton span{
-    padding-left:5px;
+    padding-left:5px;    
 }
 
 .navButton ion-icon{
@@ -191,7 +191,7 @@ body {
         grid-column-start: 2;
         grid-column-end: 3;
         display: inline-grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr) 80px;
         margin-right: 40px;
     }
 
