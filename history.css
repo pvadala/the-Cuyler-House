@@ -147,7 +147,7 @@ img {
 
 img:hover {
     filter: grayscale(100%);
-    invert(100%;)
+    invert:(100%);
 }
 
 
