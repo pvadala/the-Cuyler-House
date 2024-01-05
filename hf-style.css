@@ -172,10 +172,12 @@ body {
     border-radius: 10px 10px;
 }
 
+/*Used to hide the overlays until they're needed.*/
 .imgContOverlayHidden {
     display: none;
 }
 
+/*Sets the properties of the main overlay. It should make the content sit in the center of the screen with a close button on the upper right hand side of the window.*/
 .imgContOverlayRevealed {
     display: relative;
     z-index: 3;
@@ -191,8 +193,6 @@ body {
     background-color: #000000DD;
     border: 1px solid #000000DD;
 }
-
-
 
 .overlayHold {
     position: absolute;
@@ -231,8 +231,6 @@ body {
     overflow-y: auto;
 }
 
-
-
 .closeIcon {
     float: right;
     background-image: url("/images/litYelClose.svg");
@@ -245,7 +243,6 @@ body {
     background-color: #FFFFFF00;
     position: static;
 }
-
 
 .imgCont>img {
     max-height: 20vh;

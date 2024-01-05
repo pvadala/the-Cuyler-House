@@ -54,11 +54,9 @@
 
             </div>
 
-        </div>
+        </div> <!--End of Banner div.-->
 
-        <!--WIP: -->
-
-        <!-- Page-specific content goes in this div-->
+        <!-- Most page-specific content is placed within this div.-->
         <div class="containerVis" id="container">
             <h1>Hidden Features</h1>
 
@@ -67,11 +65,9 @@
                 provide hidden spaces unknown to the state and difficult to detect by an invading force without close
                 scrutiny. <br> <br> The Cuyler House was one such house.</p>
 
-
             <h4>Click an image to read more</h4>
 
-
-
+            <!--When any of the hidImg elements are clicked, they call a function that reveals a div overlay holding an uncropped version of the image, additional text, and a close icon. At the same time, the container div is hidden from view.-->
             <div class="contFeatures">
                 <div class="imgCont" id="stairsClosedDiv">
                     <img class="hidImg" src="/images/hiddenStairs.jpg"
@@ -96,10 +92,11 @@
 
             </div>
 
-        </div>
+        </div> <!--End of container div.-->
 
+        <!--This section of the main div holds hidden div overlays for the three images previewed in the container div. When the close icon is clicked when any of these are visible, the overlay is hidden and the container div is restored.-->
 
-
+        <!--Overlay for the closed stair image.-->
         <div class="imgContOverlayHidden" id="stairsClosedDivOver">
             <button class="closeIcon" id="closeOne" onclick="closeOverlay(1)"></button>
             <div class="overlayHold">
@@ -114,6 +111,7 @@
             </div>
         </div>
 
+        <!--Overlay for the opened stair compartment image.-->
         <div class="imgContOverlayHidden" id="stairsOpenDivOver">
             <img class="closeIcon" id="closeTwo" src="/images/litYelClose.svg" onclick="closeOverlay(2)">
             <div class="overlayHold">
@@ -127,6 +125,7 @@
             </div>
         </div>
 
+        <!--Overlay for the house layout image-->
         <div class="imgContOverlayHidden" id="hiddenPartDivOver">
             <img class="closeIcon" id="closeThree" src="/images/litYelClose.svg" onclick="closeOverlay(3)">
             <div class="overlayHold">
@@ -139,25 +138,8 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!--End of the section related to hidden page elements-->
+    </div> <!--End of the main div.-->
 </body>
 
 </html>
