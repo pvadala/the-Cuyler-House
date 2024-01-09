@@ -124,6 +124,7 @@ body {
     text-align: center;
 }
 
+/*Hides the container div when the overlay is active.*/
 .containerHide {
     display: none;
 }
@@ -140,6 +141,7 @@ body {
     margin-right: 1px;
 }
 
+/*Sets the style for contFeatures' child divs.*/
 .imgCont {
     min-width: 240px;
     max-width: 300px;
@@ -194,6 +196,7 @@ body {
     border: 1px solid #000000DD;
 }
 
+/*Buffer div for contHold.*/
 .overlayHold {
     position: absolute;
     top: 50%;
@@ -203,6 +206,7 @@ body {
     overflow-y: auto;
 }
 
+/*Style for p tags within the contHold div.*/
 .contHold>p {
     max-width: 500px;
     margin: 20px auto;
@@ -210,6 +214,7 @@ body {
     font-size: 18px;
 }
 
+/*Styles the overlays' image tags.*/
 .showImg {
     margin-top: 30px;
     max-height: 600px;
@@ -217,8 +222,12 @@ body {
     border: 5px solid black;
     box-shadow: 0px 0px 15px black;
     border-radius: 10px 10px;
+    max-width: 400px;
+    min-width: 30%;
+    object-fit: contain;
 }
 
+/*Styles the div holding the overlay's content.*/
 .contHold {
     display: table-cell;
     margin-top: 10px;
@@ -231,6 +240,7 @@ body {
     overflow-y: auto;
 }
 
+/*Styles the overlay's close button.*/
 .closeIcon {
     float: right;
     background-image: url("/images/litYelClose.svg");
@@ -244,15 +254,9 @@ body {
     position: static;
 }
 
+/*Styles the content divs for the container div.*/
 .imgCont>img {
     max-height: 20vh;
-}
-
-.showImg {
-    position: relative;
-    max-width: 400px;
-    min-width: 30%;
-    object-fit: contain;
 }
 
 /*This makes the pages' style properties start snugly in the top left corner.*/
@@ -355,6 +359,7 @@ body {
         text-align: center;
     }
 
+    /*Hides the container div when the overlay is active.*/
     .containerHide {
         display: none;
     }
@@ -370,6 +375,7 @@ body {
         justify-self: center;
     }
 
+    /*Sets the style for contFeatures' child divs.*/
     .imgCont {
         display: block;
         text-align: center;
@@ -391,11 +397,12 @@ body {
     }
 
 
-
+    /*Used to hide the overlays until they're needed.*/
     .imgContOverlayHidden {
         display: none;
     }
 
+    /*Sets the properties of the main overlay. It should make the content sit in the center of the screen with a close button on the upper right hand side of the window.*/
     .imgContOverlayRevealed {
         display: relative;
         z-index: 3;
@@ -412,6 +419,7 @@ body {
         border: 1px solid #000000DD;
     }
 
+    /*Buffer div for contHold.*/
     .overlayHold {
         position: absolute;
         top: 50%;
@@ -421,6 +429,7 @@ body {
 
     }
 
+    /*Style for p tags within the contHold div.*/
     .contHold>p {
         max-width: 500px;
         margin: 20px auto;
@@ -428,6 +437,7 @@ body {
         font-size: 18px;
     }
 
+    /*Styles the overlays' image tags.*/
     .showImg {
         max-height: 80vh;
         border: 5px solid black;
@@ -438,7 +448,7 @@ body {
         object-fit: contain;
     }
 
-
+    /*Styles the div holding the overlay's content.*/
     .contHold {
         display: table-cell;
         margin: 0px;
@@ -448,7 +458,7 @@ body {
     }
 
 
-
+    /*Styles the overlay's close button.*/
     .closeIcon {
         float: right;
         background-image: url("/images/litYelClose.svg");
