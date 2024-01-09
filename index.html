@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cuyler House - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Cuyler House - TEMPLATE</title>
+    <link rel="stylesheet" href="templateStyle.css">
+    <!--Change the .css file your .html file links to in case you need specific style changes for your page.-->
     <script src="script.js"></script> <!--Link to the javascript file that holds our JS functions.-->
 </head>
 
@@ -14,14 +15,42 @@
 
         <!--Banner div that contains all of our site navigation links and keeps them fixed to the top of the navigation window.-->
         <div class="banner">
-            
             <!--Header is a placeholder; modify it as needed to reflect page contents-->
             <h1>The Cuyler House</h1>
-            <button class="navButton" id="homeBtn">Home</button>
-            <button class="navButton" id="histBtn">History</button>
-            <button class="navButton" id="mapBtn">Maps & Charts</button>
-            <button class="navButton" id="featBtn">Features</button>
-            <button class="navButton" id="linkBtn">Links</button>
+
+            <!--Should be hidden when screen width is narrow enough to interfere with navigation-->
+            <div class="navButtonCont">
+                <button class="navButton" id="homeBtn" onclick="location.href='/index2.html'">Home</button>
+                <button class="navButton" id="histBtn" onclick="location.href='/history.html'">History</button>
+                <button class="navButton" id="mapBtn" onclick="location.href='/maps.html'">Maps & Charts</button>
+                <button class="navButton" id="featBtn" onclick="location.href='/hidden-features.html'">Hidden
+                    Features</button>
+                <button class="navButton" id="storeBtn" onclick="location.href='/shop.html'">Shop</button>
+            </div>
+
+            <!--Should be hidden when screen width isn't too narrow.-->
+            <div id="navMenu">
+                <!--dropButton activates a JavaScript function that toggles the menu's visibility on/off and changes the icon used in the button between two files.-->
+                <button id="dropButton" onclick="dropMenu()"><img id="navMenuToggle"
+                        src="/images/default-menu-burger.svg" alt="Dropdown Navigation Menu Toggle"></button>
+
+                <!--This div's class toggles between closedMenuCont and openMenuCont each time dropButton is clicked, revealing or hiding its contents.-->
+                <div id="navMenuCont" class="closedMenuCont">
+
+                    <!--Buttons that act as clickable links to other pages on the site.-->
+                    <button class="menuButton" id="homeMenuBtn" onclick="location.href='/index2.html'">Home</button>
+                    <button class="menuButton" id="histMenuBtn" onclick="location.href='/history.html'">History</button>
+                    <button class="menuButton" id="mapMenuBtn" onclick="location.href='/maps.html'">Maps &
+                        Charts</button>
+                    <button class="menuButton" id="featMenuBtn" onclick="location.href='/hidden-features.html'">Hidden
+                        Features</button>
+                    <button class="menuButton" id="storeMenuBtn" onclick="location.href='/shop.html'">Shop</button>
+
+
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -37,6 +66,8 @@
                 <image src="/images/green st fewd.jpf" alt="cuyler house">
                     <image src="/images/secret door small.jpg" alt="secret door">
                         <image src="/images/secret door open.jpg" alt="secret door open">
+                            <image src="/images/cuylerbrsmall.jpg" alt="secret bedroom">
+                                
                 
                 
         </div>
@@ -45,8 +76,11 @@
 
 
     </div>
+
+
+
+
+    </div>
 </body>
 
 </html>
-
-
