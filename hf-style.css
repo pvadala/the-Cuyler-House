@@ -3,6 +3,7 @@ body {
     background-color: #20572b;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
 }
 
 /*Contains the logo and navigation links. It has a fixed position so that it will remain at the top of the screen, ensuring navigability no matter how far down the user scrolls. Its contents default to display a dropdown button for screens of a small width; this to improve load speed on mobile devices.*/
@@ -203,21 +204,29 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
-    overflow-y: auto;
+    max-width: 100%;
+   
 }
 
 /*Style for p tags within the contHold div.*/
 .contHold>p {
-    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
     margin: 20px auto;
     text-align: center;
     font-size: 18px;
 }
 
+/*Styles the h4 elements on the overlays.*/
+h4 {
+    color:#808080;
+}
+
 /*Styles the overlays' image tags.*/
 .showImg {
     margin-top: 30px;
-    max-height: 600px;
+    max-height: 550px;
     position: relative;
     border: 5px solid black;
     box-shadow: 0px 0px 15px black;
@@ -225,19 +234,21 @@ body {
     max-width: 400px;
     min-width: 30%;
     object-fit: contain;
+    align-self: center;
 }
 
 /*Styles the div holding the overlay's content.*/
 .contHold {
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     padding: 0px;
-    vertical-align: middle;
     text-align: center;
     z-index: 4;
     position: relative;
     min-height: 400px;
-    overflow-y: auto;
+    overflow: auto;
+    max-height: 90vh;
 }
 
 /*Styles the overlay's close button.*/
@@ -252,6 +263,7 @@ body {
     background-size: cover;
     background-color: #FFFFFF00;
     position: static;
+  
 }
 
 /*Styles the content divs for the container div.*/
@@ -269,7 +281,13 @@ body {
     width: 100%;
 }
 
+@media screen and (min-height:800px) {
 
+.contHold {
+    overflow: auto;
+}
+
+}
 /*Media Query that checks if the page is greater than 900 pixels wide, and changes the layout for desktop environments if that is the case.*/
 @media screen and (min-width: 1001px) {
 
@@ -417,6 +435,7 @@ body {
         justify-self: center;
         background-color: #000000DD;
         border: 1px solid #000000DD;
+        
     }
 
     /*Buffer div for contHold.*/
@@ -426,35 +445,40 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0px;
-
     }
 
     /*Style for p tags within the contHold div.*/
     .contHold>p {
-        max-width: 500px;
+        max-width: 400px;
         margin: 20px auto;
         text-align: center;
         font-size: 18px;
     }
 
+/*Styles the h4 elements on the overlays.*/
+h4 {
+    color:#808080;
+}
+
     /*Styles the overlays' image tags.*/
     .showImg {
-        max-height: 80vh;
         border: 5px solid black;
         box-shadow: 0px 0px 15px black;
         border-radius: 10px 10px;
-        max-width: 600px;
-        min-width: 30%;
+        max-width: 80%;
         object-fit: contain;
+        margin-left: 10px;
     }
 
     /*Styles the div holding the overlay's content.*/
     .contHold {
-        display: table-cell;
-        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
         padding: 0px;
         vertical-align: middle;
         text-align: center;
+
     }
 
 
